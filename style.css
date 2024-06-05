@@ -1,0 +1,428 @@
+body {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #292e36;
+}
+
+h2 {
+  text-align: center;
+  /* margin-bottom: 1em; */
+  font-weight: 700;
+
+  background-color: #292e36;
+  color: aliceblue;
+  padding: 1em;
+  
+  /* text-transform: uppercase; */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.top-bar {
+  background-color: #292e36;
+  margin-bottom: 1em;
+}
+
+header {
+  background-color: #292e36;
+  padding: 0.5em 1em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+}
+
+.header-info .call,
+.header-info .reservation {
+  background-color: #e0b168;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin-left: 1em;
+  transition: background-color 0.3s;
+}
+
+.header-info .call a,
+.header-info .reservation a {
+  color: #292e36;
+  text-decoration: none;
+}
+
+.header-info .call:hover,
+.header-info .reservation:hover {
+  background-color: #cfa050;
+}
+
+nav {
+  background-color: #292e36;
+  padding: 0.5em 1em;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 1em;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e0b168;
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #ffffff;
+  position: relative;
+  height: 700px;
+
+  background-image: url('images/cook.jpeg'); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.welcome-section h1 {
+  position: relative;
+  z-index: 1;
+  font-weight: 800;
+  padding: none ;
+  margin: 1%;
+  font-size: 4em;
+  color: #292e36;
+}
+.welcome-section p {
+  position: relative;
+  z-index: 1;
+  font-weight: 800;
+  padding: none ;
+  margin: 1%;
+  font-size: 2em;
+  color: #292e36;
+  
+}
+
+.welcome-section .buttons {
+  margin-top: 3em;
+  
+}
+
+.welcome-section .btn {
+  background-color: #e0b168;
+  color: #292e36;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin: 0 0.5em;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 1.3em;
+  font-weight: 200;
+}
+
+.welcome-section .btn:hover {
+  background-color: #cfa050;
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  background-color: #292e36;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item i {
+  font-size: 2em;
+  color: #e0b168;
+}
+.info-item p {
+  color: #e0b168;
+}
+
+.about-container {
+  padding: 2em 1em;
+  background-color: #ffffff; 
+  height: 500px;
+  background-image: url(images/ourStory.webp);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.about-content img {
+  max-width: 20%;
+  border-radius: 10px;
+  margin-left: 6rem;
+}
+
+.about-text {
+  max-width: 60%;
+  background-color: #292e36;
+  padding: 1em;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  color: aliceblue;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  background-color: #292e36;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 1em;
+  max-width: 20%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+}
+
+.feature-item i {
+  font-size: 2em;
+  color: #e0b168;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em 1em;
+  background-color: #ffffff;
+  gap: 2em;
+  background-image: url('images/cook.jpeg'); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.gallery-container img{
+  width: 100%;
+  height: 90%;
+}
+
+.gallery-item {
+  text-align: center;
+  transition: transform 0.3s;
+  background-color: #292e36;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex: 1;
+  max-width: 20%;
+  color: aliceblue;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em 1em;
+  background-color: #ffffff;
+  gap: 2em;
+  background-image: url(images/ourStory.webp);
+}
+
+.blog-item {
+  max-width: 35%;
+
+  transition: transform 0.3s;
+  background-color: #292e36;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.blog-item:hover {
+  transform: scale(1.05);
+}
+
+.blog-item img {
+  width: 100%;
+  height: 70%;
+}
+
+.blog-content {
+  padding: 1em;
+  color: aliceblue;
+}
+
+.contact-container {
+  padding: 2em 1em;
+  background-color: #292e36;
+  text-align: center;
+}
+
+.contact-info {
+  margin-bottom: 1em;
+  color: #ffffff;
+}
+
+.contact-info form {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.contact-info input {
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-info button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0b168;
+  color: #292e36;
+  cursor: pointer;
+}
+
+.social-media a {
+  color: #e0b168;
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 1em;
+  background-color: #292e36;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-links a {
+  color: #e0b168;
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  margin: 0 0 1em;
+}
+
+.modal-content form label {
+  display: block;
+  margin: 0.5em 0 0.2em;
+}
+
+.modal-content form input {
+  width: calc(100% - 12px);
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content form button {
+  background-color: #e0b168;
+  color: #292e36;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content form button:hover {
+  background-color: #cfa050;
+}
+
+/* Additional styles to keep the existing design consistent */
