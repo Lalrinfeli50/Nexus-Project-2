@@ -43,6 +43,7 @@ The `scripts.js` file handles the functionality for:
 
   ## Preview
 
-![Website Preview](images/cap1.png)
+![Website Preview](images/screencapture-file-Users-lalrinfeli-Desktop-Nexus-Project-2-index-html-2024-06-05-21_02_40.png
+)
 
 
