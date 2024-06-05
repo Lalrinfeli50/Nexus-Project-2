@@ -41,4 +41,8 @@ The `scripts.js` file handles the functionality for:
 - Form validation
 - Placeholder for backend integration
 
+  ## Preview
+
+![Website Preview](images/cap1.png)
+
 
